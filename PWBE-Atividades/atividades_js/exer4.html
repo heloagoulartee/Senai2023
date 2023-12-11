@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programa Caixa Eletronico</h1>
+    Valor do Saque: <input name="valorsaque" type="text" id="valorsaque" 
+    value="" size="15" maxlength="9"><br><br>
+    <br><button onclick="notas()">Exibir notas para o saque</button>
+    <p id="notas100"></p> 
+    <p id="notas50"></p> 
+    <p id="notas10"></p> 
+
+    <script>
+    function notas(){
+        var valorsaque = document.getElementById("valorsaque").value;
+        var notas100 = "Notas de 100: " + notas100;
+        var notas50 = "Notas de 50: " + notas50;
+        var notas10 = "Notas de 10: " + notas10;
+
+      if (valorsaque >= 100) {
+           valorsaque = valorsaque-100;
+           notas100++;
+            document.getElementById("notas100").innerHTML=notas100;
+    }else if (valorsaque >= 50) {
+           valorsaque = valorsaque-50;
+           notas50++;
+            document.getElementById("notas50").innerHTML=notas50;
+    }else if (valorsaque >= 10) {
+           valorsaque = valorsaque-10;
+           notas10++;
+            document.getElementById("notas10").innerHTML=notas10;
+    }
+}
+    </script>
+</body>
+</html>

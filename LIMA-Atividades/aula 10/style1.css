@@ -1,0 +1,9 @@
+body{
+    font-family: Arial;
+    background-color: rgb(208, 194, 241);
+}
+p {
+    background-color: seagreen;
+    color: slateblue;
+}
+h1,h2{color: rgb(0, 0, 0)}

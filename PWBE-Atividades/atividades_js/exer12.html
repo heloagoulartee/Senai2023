@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clube de Natação</title>
+</head>
+<body>
+<center><div style="margin:130px ;width: 400px; border-radius: 30px;background-color:rgb(123, 0, 0);">
+  <br>
+  <h1 style="color: white;">Clube de Natação</h1>
+
+  <pre style="color: white;">Nome do Atleta: <input type="text" id="inputNome" style="border-radius: 8px;"></pre>
+  <pre style="color: white;">Idade: <input type="text" id="inputIdade" style="border-radius: 8px;"></pre>
+  <button onclick="categorizarAtleta()" style="border-radius: 8px; background-color: rgb(255, 255, 255);color: rgb(0, 0, 0);">Categorizar Atleta</button>
+  <p id="catAtleta" style="color: white;"></p>
+  <br>
+  <ul id="parcelas" style="list-style-type: none; padding: 0; color: white;"></ul>
+</div></center>
+  <script>
+    function categorizarAtleta() {
+      var nome = document.getElementById("inputNome").value;
+      var idade = parseInt(document.getElementById("inputIdade").value);
+
+      var categoria = "";
+
+      if (idade <= 12) {
+        categoria = "Infantil";
+      } else if (idade >= 13 && idade <= 18) {
+        categoria = "Juvenil";
+      } else {
+        categoria = "Adulto";
+      }
+
+      var partesNome = nome.split(" ");
+      var tracos = partesNome.map(part => "-".repeat(part.length)).join(" ");
+
+      var mensagem = partesNome.join(" ") + "<br>" + tracos + "<br>Categoria: " + categoria;
+
+      document.getElementById("catAtleta").innerHTML = mensagem;
+    }
+  </script>
+</body>
+</html>

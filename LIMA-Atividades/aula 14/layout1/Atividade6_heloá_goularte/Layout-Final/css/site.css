@@ -1,0 +1,54 @@
+body{
+    background-color: rgb(201, 93, 255);
+}
+
+.o{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 400px;
+    font-size: 30px;
+}
+
+.s{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -510px; 
+}
+
+.r{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-top: -120px;
+}
+
+.caixa{ 
+    color: rgb(0, 0, 0);
+    background-color:rgb(218, 207, 228) ;
+    font-family: Georgia, serif;
+    font-size: 5px;
+    width: 370px;
+}
+.jk{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 95px;
+}
+
+.lo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: -800px;
+} 
+
+.q{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+    font-size: 30px;
+}

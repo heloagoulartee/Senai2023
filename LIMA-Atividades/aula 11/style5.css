@@ -1,0 +1,15 @@
+img.esquerda{float: left;
+             margin-right: 2.5cm;}
+
+img.direita{float: right;
+            margin-left: 2.5cm;}
+            
+h1.a{clear:both;
+     text-align: center;}
+
+p.esq{clear:both;
+      text-align: center;}
+
+img.centro{float: right;
+            margin-right: 15.3cm;
+            position: relative;}

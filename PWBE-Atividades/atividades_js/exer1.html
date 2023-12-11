@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form method="get" action=".">
+    <h1>Consulta de CEP</h1>
+    Digite o CEP: <input type="text" id="Input">
+    <button onclick="consultar()">Consultar</button>
+    <h4>CEP:</h4><input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);">
+    <h4>Logradouro:</h4> <input name="logradouro" type="text" id="logradouro" value="" size="10">
+    <h4>Bairro:</h4> <input name="bairro" type="text" id="bairro" value="" size="10">
+    <h4>Cidade:</h4> <input name="cidade" type="text" id="cidade" value="" size="10">
+    <h4>Estado:</h4> <input name="estado" type="text" id="estado" value="" size="10">
+    </form>
+    <script>
+          function form(){
+            document.getElementById('logradouro').value("");
+            document.getElementById('bairro').value("");
+            document.getElementById('cidade').value("");
+            document.getElementById('estado').value("");
+        }
+    </script>
+</body>
+</html>

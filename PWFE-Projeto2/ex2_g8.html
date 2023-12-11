@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1 style="color:rgb(123, 3, 142);">Brinquedoteca</h1>
+        Nome da Criança: <input name="nome" type="text" id="nome" 
+        value="" size="15"><br><br>
+        Idade da Criança: <input name="idade" type="text" id="idade" 
+        value="" size="15"><br>
+        <br><button onclick="Listar()">Listar</button>
+        <p id="Listar"></p>
+    </center>
+
+    <script>
+        var listaCriancas = [];
+
+        function Listar(){
+            var nome = document.getElementById("nome").value;
+            var idade = document.getElementById("idade").value;
+            var crianca = { nome: nome, idade: idade };
+
+            listaCriancas.push(crianca);//adiciona mais elementos na lista
+
+            var mostrarLista = document.getElementById("Listar");
+            mostrarLista.innerHTML = "Lista de Crianças:<br>";
+
+            for (var i = 0; i < listaCriancas.length; i++) {//ler varrer e impimir
+                mostrarLista.innerHTML += "Nome: " + listaCriancas[i].nome + ", Idade: "
+                + listaCriancas[i].idade + "<br>";
+            }
+        }
+    </script>
+</body>
+</html> 

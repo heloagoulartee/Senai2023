@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programa Par ou Ímpar</h1>
+    Número: <input name="numero" type="text" id="num" 
+    value="" size="15" maxlength="9"><br><br>
+    <br><button onclick="parimpar()">Verificar se é Par ou Ímpar</button>
+    <p id="numero"></p> 
+
+    <script>
+        function parimpar(){
+            var numero = document.getElementById("num").value;
+            var par = "o numero é par";
+            var impar = "o numero é impar";
+
+            if (numero % 2 === 0){
+                numero = par
+                document.getElementById("numero").innerHTML=par;x
+            } else{
+                numero = impar
+                document.getElementById("numero").innerHTML=impar;
+            }
+        }
+    </script>
+</body>
+</html>

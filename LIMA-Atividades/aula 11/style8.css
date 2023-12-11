@@ -1,0 +1,11 @@
+.vertical-menu{width: 200px;}
+
+.vertical-menu a{background-color: grey;
+color: black;
+display: block;
+padding: 12px;
+text-decoration: none;}
+
+.vertical-menu a:hover{background-color: aquamarine;}
+.vertical-menu a.active{background-color: darkviolet;
+color: rgb(254, 228, 242);}

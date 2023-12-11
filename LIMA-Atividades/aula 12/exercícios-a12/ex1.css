@@ -1,0 +1,21 @@
+h1{  display: flex;
+    justify-content: center;
+    border: outset rgb(160, 81, 229);
+color: rgb(0, 0, 0);
+background-color: none;}
+
+p{  display: flex;
+    justify-content: center;
+    border: solid rgb(144, 0, 255);
+color: rgb(255, 255, 255);
+background-color: none;}
+
+p.caixaum{background-color: none;
+    display: flex;
+  justify-content: center;
+    border: 3px dotted rgb(255, 253, 254);
+    text-indent: 3.25cm;}
+
+body{
+    background-color: rgb(146, 146, 146);
+}

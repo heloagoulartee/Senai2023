@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-image: url(/projetosesi/projetoimg/fundo.png);
+}
+/*  Cabeçalho   */
+.Cabecalho {
+    position: fixed;
+    width: 100%;
+    background-color: rgb(232, 11, 11);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+.Logo-Sesi {
+    width: 250px;
+    margin-right: 900px;
+}
+.Logo-P {
+    width: 70px;
+}
+/*  Corpo   */
+.Corpo {
+    display: flex;
+    justify-content: center;
+}
+.Quadrado {
+    position: relative;
+    top: 240px;
+    background-color: white;
+    border: 5px solid rgb(232, 11, 11);
+    box-shadow: 20px 25px 5px rgba(0, 0, 0, 0.297);
+    width: 70%;
+    border-radius: 20px;
+    padding: 20px;
+}
+input[type='text'] {
+    width: 70%;
+    margin-bottom: 20px;
+    height: 20px;
+    border-bottom: 1px solid black;
+    align-items: end;
+    font-size: 20px;
+    padding: 30px 0 0 5px;
+    margin-top: 15px;
+}
+input[type='text']:focus  {
+    outline: 0px;
+}
+select {
+    width: 350px;
+    height: 25px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    border-radius: 30px;
+}
+input[type='radio'] {
+    margin-top: 10px;
+}
+.botao {
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+    border-radius: 30px;
+	color: white;
+    background-color: rgb(176, 0, 0);
+    margin-top: 20px;
+    margin-left: 40px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.726);
+}
+
+.botao p {
+    text-align: center;
+    width: 800px;
+}
+
+.rodape{
+    margin-top: 360px;
+    background-color: rgb(176, 0, 0);    
+    width: 2012px;
+    height: 110px;
+    color: aliceblue;
+    display: flex;
+  }
+ 
+  .rodape2{
+     margin-top: -20px;
+     background-color: rgb(98, 0, 0);    
+     width: 2012px;
+     height: 35px;
+     color: aliceblue;
+   }
+ 
+   .rodape2 a{
+     display: flex;
+     align-items: center;
+   }
+ 
+ a {
+     text-decoration: none;
+     color: #ffffff;
+     margin-top: 13px;
+ }
+ .txtrodape {
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     justify-content: space-evenly;
+     text-decoration: none;
+     font-size: 18px;
+     margin-left: 10px;
+ }
+ 
+ .txtrodape p{
+    margin-top: 17px;
+ }
+ .copyright {
+     margin-top: 209px;
+    background-color: rgb(103, 0, 0);
+    width: 2012px;
+    height: 160px;
+    color: aliceblue;
+ }
+ 
+ .telefone{
+     position: absolute;
+     margin-top: 15px;
+     margin-left: 410px;
+ }
+ 
+ .perfil{
+     position: absolute;
+     margin-top: 47px;
+     margin-left: 410px;
+ }
+ 
+ .micro{
+     position: absolute;
+     margin-top: 15px;
+     margin-left: 1270px;
+ }
+ 
+ .fone{
+     position: absolute;
+     margin-top: 47px;
+     margin-left: 1270px;
+ }
+
+ .trofeu{
+    position: absolute;
+    margin-top: -245px;
+    margin-left: 1400px;
+ }

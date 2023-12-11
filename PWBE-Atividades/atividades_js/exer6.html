@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Referência Bibliográfica</h1>
+    Nome do Autor: <input name="numero" type="text" id="nome" 
+    value="" size="15"><br><br>
+    <br><button onclick="citacao()">Gerar Citação Bibliográfica</button>
+    <p id="sobrenome"></p> 
+    <script>
+        function citacao(){
+           var nome = document.getElementById("nome").value; 
+           let palavras = nome;
+           const linha = palavras.split(" ");
+           let primeira = linha[0];
+           let segunda = linha[1];
+           let terceira = linha[2];
+           primeira = primeira.charAt(0);
+           segunda = segunda.charAt(0);
+
+           document.getElementById("sobrenome").innerHTML= primeira;
+           document.getElementById("sobrenome").innerHTML= segunda;
+           document.getElementById("sobrenome").innerHTML= terceira;
+        }
+    </script>
+</body>
+</html>

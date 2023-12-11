@@ -1,0 +1,20 @@
+
+*{
+    padding: 0;
+    margin:0;
+    border:0;
+    box-sizing: border-box;
+}
+.dropbtn{
+    background-color: rgb(54, 175, 175);
+    color: black;
+    padding: 16px;
+    border-radius: 10px;
+}
+.dropdown:hover .dropbtn{
+    background-color: rgb(87, 45, 127);
+}
+
+#ti{display: flex;
+    align-items: center;
+    flex-direction:row;}

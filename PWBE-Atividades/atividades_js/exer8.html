@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Programa Valida Senha</h1>
+    Senha: <input name="numero" type="text" id="senha" 
+    value="" size="15"><br><br>
+    <br><button onclick="verificarSenha()">Verificar validade da Senha</button>
+    <p id="verificarSenha"></p>    
+    <script>
+        function verificarSenha() {
+        var senha = document.getElementById("senha").value;
+        if (senha.length >= 8 && senha.length <= 15) {
+        document.getElementById("verificarSenha").innerHTML="Senha válida!";
+        } else {
+        document.getElementById("verificarSenha").innerHTML="ERRO: A senha deve conter de 8 a 15 caracteres ";
+        }
+    }
+    </script>
+</body>
+</html>

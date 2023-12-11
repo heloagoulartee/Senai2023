@@ -1,0 +1,22 @@
+<html>
+
+<head>
+<hr>
+<meta charset="UTF-8">
+<h4> Mudanças de Linhas </h4>
+</head>
+
+<body>
+<p>"No mundo dos negócios todos são pagos com duas 
+<br>moedas: Dinheiro e experiência. Agarre a experiência
+<br>primeiro, o dinheiro vira depois"-Harold Geneen</p>
+
+<p><br>Ha homens que lutam um dia e são bons.
+<br>Ha outros que lutam muitos dias e são melhores.
+<br>Mas ha os que lutam toda a vida, e estes são
+<br>Imprescindiveis.
+<br> -Bertold Brecht</p>
+<hr>
+</body>
+
+</html>

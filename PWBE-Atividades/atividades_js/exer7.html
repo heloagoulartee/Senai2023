@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tpdc</title>
+</head>
+<body>
+    <script>
+        var palavra = prompt("palavra:");
+        var palavraInvertida = inverterPalavra(palavra);
+
+        function inverterPalavra(palavra) {
+        return palavra.split('').reverse().join('');
+        }
+        alert("palavra: " + palavra);
+        alert("invertida: " + palavraInvertida);
+    </script>
+</body>
+</html>

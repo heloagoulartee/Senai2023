@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Farmácia</h1>
+    Medicamento: <input name="medicamento" type="text" id="medicamento" 
+    value="" size="15" maxlength="9"><br><br>
+    Preço:<input name="preco" type="text" id="preco" 
+    value="" size="15" maxlength="9"><br><br>
+    <button onclick="promocao()">Mostrar Promoção</button><br>
+    <p id="y"></p> 
+    <p id="x"></p> 
+
+    <script>
+        function promocao(){
+            let medicamento = document.getElementById("medicamento").value;
+            let preco= document.getElementById("preco").value;
+            preco = preco*2;
+            let levar = "Promoção de " +  medicamento;
+            let promo = "Leve 2 por apenas R$: " + preco;
+            document.getElementById("y").innerHTML=levar;
+            document.getElementById("x").innerHTML=promo;
+        }
+    </script>
+</body>
+</html>

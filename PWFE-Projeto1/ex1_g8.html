@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center><h1 style="color:rgb(0, 119, 128);">Programa Locadora</h1>
+    Nome do Filme: <input name="nome" type="text" id="nome" >
+    <br>Duração do Filme em Minutos: <input name="Tempo" type="text" id="duracao" ><br><br>    
+    <br><button onclick="horasParaMinutos()">Modificar para Hora</button>
+    <p id="horasParaMinutos"></p> </center>
+      
+    <script>
+        function horasParaMinutos() {
+        var nome = document.getElementById("nome").value;
+        var duracao = document.getElementById("duracao").value;
+        var horas = duracao/60;
+        document.getElementById("horasParaMinutos").innerHTML="O filme " + nome + " " 
+        + "tem a duração de " + horas + " horas";
+    }
+    </script>
+</body>
+</html>

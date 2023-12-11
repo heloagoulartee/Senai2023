@@ -1,0 +1,11 @@
+p {font-size: 12pt;}
+p::first-line{color:rgb(0, 0, 0); font-variant: small-caps;}
+h1::before{content:url(../imagens/tokyo.gif)}
+h1::after{content:url(../imagens/tokyo.gif)}
+p::before{content: "texto";}
+p::selection{color: rgb(255, 0, 0); background-color: rgb(217, 0, 255);}
+div {
+    background-image:url("../imagens/outer.jpg");
+    background-repeat:no-repeat;
+    background-position:right top;
+}

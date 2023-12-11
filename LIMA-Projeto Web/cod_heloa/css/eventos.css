@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body{
+	font-family: 'Poppins', sans-serif;
+	font-weight: 300;
+	line-height: 1.7;
+  background-image: url(../projetoimg/fundo.png);
+}
+
+h1{
+	font-size: 50px;
+	color: aliceblue;
+	margin-left: -800px;
+}
+
+h2{
+	display: flex;
+	justify-content: center;
+}
+
+p{
+	margin-left: 15px;
+}
+
+.bloco{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction:column;
+
+}
+
+.blocoo {
+	display: flex;
+	margin-top: 180px;
+}
+
+.bloco2{
+	background-color: rgb(167, 167, 167);
+	border-radius: 30px;
+	height: 450px;
+	width: 300px;
+	margin-right: 15px;
+	margin-bottom: 15px;
+	align-items: center;
+}
+
+.bloco2:hover{
+	width: 316px;
+	height: 460px;
+	transition-duration: 900ms;
+	margin-bottom: 1px;
+	margin-bottom: 1px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.468);
+}
+  
+  .Cabecalho {
+    position: fixed;
+    width: 100%;
+    height: 10%;
+    background-color: rgb(232, 11, 11);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 2;
+}
+
+.Logo-Sesi {
+    width: 250px;
+    margin-right: 900px;
+}
+.Logo-P {
+    width: 70px;
+}
+
+.rodape{
+    margin-top: 60px;
+    background-color: rgb(176, 0, 0);    
+    width: 2012px;
+    height: 110px;
+    color: aliceblue;
+    display: flex;
+  }
+ 
+  .rodape2{
+     margin-top: -20px;
+     background-color: rgb(98, 0, 0);    
+     width: 2012px;
+     height: 35px;
+     color: aliceblue;
+   }
+ 
+   .rodape2 a{
+     display: flex;
+     align-items: center;
+   }
+ 
+ a {
+     text-decoration: none;
+     color: #ffffff;
+     margin-top: 13px;
+ }
+ .txtrodape {
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     justify-content: space-evenly;
+     text-decoration: none;
+     font-size: 18px;
+     margin-left: 10px;
+ }
+ 
+ .copyright {
+     margin-top: 209px;
+    background-color: rgb(103, 0, 0);
+    width: 2012px;
+    height: 160px;
+    color: aliceblue;
+ }
+ 
+ .telefone{
+     position: absolute;
+     margin-top: 15px;
+     margin-left: 410px;
+ }
+ 
+ .perfil{
+     position: absolute;
+     margin-top: 47px;
+     margin-left: 410px;
+ }
+ 
+ .micro{
+     position: absolute;
+     margin-top: 15px;
+     margin-left: 1270px;
+ }
+ 
+ .fone{
+     position: absolute;
+     margin-top: 47px;
+     margin-left: 1270px;
+ }

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(83, 208, 222);
+        }
+
+        div{
+            background-color: rgb(205, 99, 234);
+            margin: 100px;
+            border-radius: 30px;
+            width: 600px;
+        }
+    </style>
+</head>
+<body>
+    <center><div>
+    <h1>Programa Cálculo das Parcelas</h1>
+    Preço R$:<input type="text" id="valor"><br>
+    <br><button onclick="parcelas()">Exibir formas de Pagamento</button>
+    <p id="parcelas"></p><br>
+    </div></center>
+
+    <script>
+        function parcelas() {
+            var valor = document.getElementById("valor").value;
+            var parcela = "";
+
+            if (isNaN(valor)) {
+                parcela = "Valor inválido!! Insira um número";
+            } else {
+                for (var i = 1; i <= 12; i++) {
+                    var valorParcela = (valor / i).toFixed(2);
+                    parcela += i + "x de R$: " + valorParcela + "<br>";
+                }
+            }
+
+            document.getElementById("parcelas").innerHTML = parcela;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+h1.removed{display: none;border: 2px solid palevioletred;}
+h1.hidden {visibility: hidden;border: 2px solid paleturquoise;}
+li{display: inline;}
+img{opacity: 0.4;;}
+img:hover{opacity: 0.0;}
+

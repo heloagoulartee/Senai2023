@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(172, 142, 103);
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: aliceblue;
+}
+
+img.centro{ display: flex;
+    justify-content: flex-start;
+}
+
+h3{border: 7px double lavender;
+    color: aliceblue;
+}
+#rosa{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+
+#verde{
+    display:flex ;
+    align-items: flex-end;
+    justify-content: space-around;
+}

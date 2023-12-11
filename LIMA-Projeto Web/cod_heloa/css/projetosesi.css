@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+	line-height: 1.7;
+    background-image: url(/projetosesi/projetoimg/fundo.png);
+}
+
+.barra{
+    background-color: rgb(232, 11, 11);
+    margin-bottom: 12px;
+}
+
+.login{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 1900px;
+    margin-top: -63px;
+}
+.caixa{
+    background-color: rgb(236, 235, 235);
+    font-size: 20px;
+    margin-top: -20px;
+}
+.casa{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 1800px;
+    margin-top: -65px;
+}
+
+ul {
+    width:100%; 
+    display: flex;
+    justify-content: space-evenly;
+}
+
+li {
+    padding-right: 20px;
+    display: inline-block;
+    list-style:none;
+}
+
+li .menu {
+    color: aliceblue;
+    font-family: 'Poppins', sans-serif;
+   font-size:1.5em;
+   text-decoration: none;
+   background-color: rgb(39, 29, 66);
+   border-radius: 14px;
+   background-color: rgb(39, 29, 66);
+   padding: 5px;
+}
+
+li .menu:hover {
+    border-bottom:4px solid rgb(39, 29, 66);
+    border-left:4px solid rgb(39, 29, 66);
+    border-right: 4px solid rgb(39, 29, 66);
+    border-top: 4px solid rgb(39, 29, 66);
+    transition-duration: 100ms;
+}
+
+#divbusca{
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    background-color: rgb(250, 250, 250);
+    border: solid 1px;
+    border-radius: 5px;
+    width:700px;
+    height: 40px;
+}
+
+#txtbusca{
+    background-color: transparent;
+    font-style: italic;
+    font-size: 18px;
+    height: 40px;
+    width: 40cm;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#btnbusca{
+    width: 10px;
+    height: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.posibarra{
+    position: absolute;
+    margin-top: 18px;
+    margin-left: 1000px;
+}
+
+.navegation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex
+}
+
+.bar{
+    width: 70px;
+    height: 12px;
+    border: 2px solid white;
+    margin: 5px;
+    cursor: pointer;
+    transition: 6s;
+}
+
+.bar:hover{
+    background-color: aliceblue;
+}
+
+.estudo{
+    position: absolute;
+    margin-left: 1070px;
+    margin-top: 110px;
+}
+
+.text1{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+   margin-left: 470px;
+   margin-top: 140px;
+}
+
+.titulosesi{
+    position: absolute;
+    margin-left: 460px;
+   margin-top: 7px;
+   font-size: 25px;
+}
+
+.torneios{
+    position: absolute;
+    margin-left: 795px;
+   margin-top: 500px;
+   font-size: 25px;
+}
+
+.carousel {
+    position: relative;
+   
+    margin-top: 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+}
+
+.carousel-open:checked + .carousel-item {
+    position: static;
+    opacity: 100;
+}
+
+.carousel-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-item img {
+    border-radius: 90px;
+    display: block;
+    height: auto;
+    max-width: 100%; 
+}
+
+.carousel-control {
+    background: rgba(0, 0, 0, 0.28);
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+    font-size: 40px;
+    height: 40px;
+    line-height: 35px;
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+    cursor: pointer;
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    text-align: center;
+    width: 40px;
+    z-index: 10;
+}
+
+.carousel-control.prev {
+    left: 2%;
+}
+
+.carousel-control.next {
+    right: 2%;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3 {
+    display: block;
+}
+
+.carousel-indicators {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 2%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.carousel-indicators li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.carousel-bullet {
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 35px;
+}
+
+.carousel-bullet:hover {
+    color: #aaaaaa;
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet {
+    color: #428bca;
+}
+
+#title {
+    width: 100%;
+    position: absolute;
+    padding: 0px;
+    margin: 0px auto;
+    text-align: center;
+    font-size: 27px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'Open Sans', sans-serif;
+    z-index: 9999;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+}
+
+.olimp{
+    position: absolute;
+   margin-top: 80px;
+   font-size: 25px;
+   margin-left: 50px;
+   border-radius: 50px;
+}
+
+.geek{
+    position: absolute;
+    margin-left: 790px;
+   margin-top: 80px;
+   font-size: 25px;
+}
+
+.rock{
+    position: absolute;
+    margin-left: 1500px;
+   margin-top:80px;
+   font-size: 25px;
+}
+
+.olimp img{
+    border-radius: 80px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
+}
+
+.geek img{
+    border-radius: 80px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
+}
+
+.rock img{
+    border-radius: 80px;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
+}
+
+.olimp img:hover {
+    height: 500px;
+    transition-duration: 500ms;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
+}
+.geek img:hover {
+    height: 500px;
+    transition-duration: 500ms;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
+}
+.rock img:hover {
+    height: 500px;
+    transition-duration: 500ms;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.726);
+}
+
+.textf{
+    display: flex;
+    justify-content: center;
+   margin-left: 10px;
+   margin-top: 600px;
+   font-size: 35px;
+}
+
+.botaoform{
+    margin-top: -3px;
+    margin-left: 550px;
+    
+}
+
+button{
+   background-color: rgb(145, 0, 0);
+   color: #ffffff;
+   font-size: 52px;
+   width: 900px;
+   height: 100px;
+   border-radius: 100px;
+   z-index: 2;
+   font-family: 'Poppins', sans-serif;
+   cursor: pointer;
+   text-align: center;
+}
+
+button:hover{
+   transition-duration: 900ms;
+  width: 900px;
+  height: 120px;
+  box-shadow: 10px 10px 5px rgba(180, 152, 152, 0.726);
+}
+
+.lamp{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 100px;
+}
+
+.cerebro{
+    position: absolute;
+    margin-top: -300px;
+    margin-left: 1530px;
+}
+
+
+.rodape{
+   margin-top: 209px;
+   background-color: rgb(176, 0, 0);    
+   width: 2012px;
+   height: 110px;
+   color: aliceblue;
+   display: flex;
+ }
+
+ .rodape2{
+    margin-top: -20px;
+    background-color: rgb(98, 0, 0);    
+    width: 2012px;
+    height: 35px;
+    color: aliceblue;
+  }
+
+  .rodape2 a{
+    display: flex;
+    align-items: center;
+  }
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    margin-top: 13px;
+}
+.txtrodape {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 10px;
+}
+
+.copyright {
+    margin-top: 209px;
+   background-color: rgb(103, 0, 0);
+   width: 2012px;
+   height: 160px;
+   color: aliceblue;
+}
+
+.telefone{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 410px;
+}
+
+.perfil{
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 410px;
+}
+
+.micro{
+    position: absolute;
+    margin-top: 15px;
+    margin-left: 1270px;
+}
+
+.fone{
+    position: absolute;
+    margin-top: 47px;
+    margin-left: 1270px;
+}
+
+video{
+    border-radius: 50px;
+}
